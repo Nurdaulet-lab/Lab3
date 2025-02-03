@@ -4,6 +4,8 @@ def is_good_movie(movie):
     if movie["imdb"] > 5.5:
         return True
     return False
+print(is_highly_rated(movies[0]))  # True (Usual Suspects has 7.0)
+print(is_highly_rated(movies[8]))  # False (AlphaJet has 3.2)
 #example 2
 def movies_above_5_5(movies):
     return [movie for movie in movies if movie["imdb"] > 5.5]
